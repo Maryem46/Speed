@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_right" id="139" x="-59" y="39">
+  <block type="movement_right" id="139" x="-68" y="-29">
     <next>
       <block type="robot_delay" id="141" inline="true">
         <value name="DELAY">
@@ -31,7 +31,7 @@
                               <block type="robot_delay" id="179" inline="true">
                                 <value name="DELAY">
                                   <block type="math_number" id="188">
-                                    <field name="NUM">3000</field>
+                                    <field name="NUM">4000</field>
                                   </block>
                                 </value>
                                 <next>
@@ -43,6 +43,45 @@
                                             <field name="NUM">1300</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="movement_forward" id="267">
+                                            <next>
+                                              <block type="robot_delay" id="269" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="276">
+                                                    <field name="NUM">1000</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="movement_left" id="288">
+                                                    <next>
+                                                      <block type="robot_delay" id="278" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="295">
+                                                            <field name="NUM">1300</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="movement_forward" id="305">
+                                                            <next>
+                                                              <block type="robot_delay" id="313" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="320">
+                                                                    <field name="NUM">4000</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
